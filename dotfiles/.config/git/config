@@ -1,0 +1,26 @@
+[user]
+    name = Yung-Jin (Joey) Hu
+    email = yungjinhu@gmail.com
+
+[core]
+    pager = delta
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = simple
+
+[diff]
+    colorMoved = default
+
+[delta]
+    line-numbers = true
+    side-by-side = true
+    navigate = true
+
+[alias]
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    lg = log --all --oneline --decorate --graph -n30
+    lgall = log --all --oneline --decorate --graph
+    root = rev-parse --show-toplevel

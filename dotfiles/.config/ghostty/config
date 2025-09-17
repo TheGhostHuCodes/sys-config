@@ -1,0 +1,9 @@
+font-family = "FiraCode Nerd Font"
+font-size = 16
+theme = "Builtin Solarized Dark"
+
+# Quick Terminal Settings
+# Golden ratio; Expected to be supported in ghostty 1.2.0.
+# quick-terminal-size = 38%
+quick-terminal-position = right
+keybind = global:cmd+escape=toggle_quick_terminal

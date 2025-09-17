@@ -1,0 +1,102 @@
+[brew]
+formulae = [
+    "bat",
+    "cmus",
+    "eza",
+    "fd",
+    "fish",
+    "gemini-cli",
+    "git",
+    "git-delta",
+    "helix",
+    "hexyl",
+    "mas",        # Necessary to be able to install App store Apps.
+    "mpd",
+    "neovim",     # nvim is an alias in brew for neovim.
+    "pass",
+    "pinentry",   # Used to input password in terminal for `pass`
+    "ripgrep",
+    "starship",
+    "uv",
+]
+casks = [
+    "alacritty",
+    "anki",
+    "balenaetcher",
+    "font-fira-code-nerd-font", # I'm happiest coding in Fira Code.
+    "ghostty",                  # The last terminal emulator that I ever install?
+    "keepassxc",
+    "makemkv",
+    "musicbrainz-picard",
+    "obsidian",
+    "openscad",
+    "orcaslicer",
+    "pocket-casts",
+    "raspberry-pi-imager",
+    "rectangle",
+    "signal",
+    "slack",
+    "visual-studio-code",
+    "vlc",
+    "xld",
+]
+
+[mas]
+apps = [{ name = "Amphetamine", id = "937984704" }]
+
+[dotfiles]
+files = [
+    ".config/alacritty/alacritty.toml",
+
+    # cmus themes.
+    ".config/cmus/themes/green-mono-88.theme",
+    ".config/cmus/themes/solarized-dark.theme",
+
+    ".config/eza/theme.yml",
+
+    # fish shell files.
+    ".config/fish/config.fish",
+    ".config/fish/conf.d/abbreviations.fish",
+
+    ".config/ghostty/config",
+
+    ".config/git/config",
+
+    # mpd on macOS installed through homebrew is not XDG-compliant.
+    ".mpd/mpd.conf",
+
+    ".config/readline/inputrc",
+
+    ".config/starship.toml",
+    # VSCode user `settings.json` is not XDG-compliant on macOS, and there's no
+    # way to overwrite it with environment variables.
+    "Library/Application Support/Code/User/settings.json",
+]
+
+[vscode]
+extensions = [
+    "eamodio.gitlens",
+    # Extension for developing GitHub Actions.
+    "GitHub.vscode-github-actions",
+    # Good vibes, good code!
+    "google.gemini-cli-vscode-ide-companion",
+    # Generic container tooling that also has Podman support.
+    "ms-azuretools.vscode-containers",
+    # Rust Analyzer, because I deserve nice things.
+    "rust-lang.rust-analyzer",
+    # My go-to spell checker for VSCode.
+    "streetsidesoftware.code-spell-checker",
+    # TOML formatting.
+    "tamasfe.even-better-toml",
+    "usernamehw.errorlens",
+    # Absolutely necessary to be able to type.
+    "vscodevim.vim",
+]
+
+[macos.dock]
+orientation = "left"
+autohide = true
+icon-size = 65
+
+[macos.safari]
+show-full-url = true
