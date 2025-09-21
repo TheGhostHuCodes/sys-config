@@ -2,22 +2,23 @@
 formulae = [
     "bat",
     "cmus",
-    "eza",
-    "fd",
+    "dust",       # Pretty `du`, written in Rust.
+    "eza",        # Pretty successor to `exa` and `ls`, written in Rust.
+    "fd",         # Successor to `find`, written in Rust.
     "fish",
     "gemini-cli",
     "git",
     "git-delta",
     "helix",
     "hexyl",
+    "just",       # Just the parts of `make` that I mostly use.
     "mas",        # Necessary to be able to install App store Apps.
     "mpd",
     "neovim",     # nvim is an alias in brew for neovim.
     "pass",
-    "pinentry",   # Used to input password in terminal for `pass`
-    "ripgrep",
+    "ripgrep",    # Successor to `ag`, `grep`, written in Rust.
     "starship",
-    "uv",
+    "uv",         # I have had it with these monkey-fighting snakes on this Monday-to-Friday plane!
 ]
 casks = [
     "alacritty",
@@ -93,10 +94,48 @@ extensions = [
     "vscodevim.vim",
 ]
 
+[macos.system]
+# We're all consenting adults here.
+show-file-extensions = true
+# Referred to as "natural" scrolling by Apple; I have never encountered anything
+# more un-natural.
+weird-mac-scrolling = false
+# Apple Press&Hold allows you to select alternative characters on long presses.
+# I've never used this feature, and it causes issues with vim navigation.
+key-press-and-hold = false
+# Waiting for key repeat to start? Ain't nobody got time for that.
+initial-key-repeat-wait = 10
+# Makes hold-down key repeats feel _FAST_!
+key-repeat-rate = 1
+
 [macos.dock]
+# Left-side is the best side.
 orientation = "left"
+# Get a bit of screen real estate back.
 autohide = true
 icon-size = 65
+# Hidden apps have transparent icons in the dock.
+transparent-hidden-app-icons = true
+
+[macos.mission-control]
+# Automatically rearrange spaces based on most recently used. How annoying!
+# Don't move my cheese!
+automatically-rearrange-spaces = false
+# Group apps together when viewing all apps in mission control.
+group-apps = true
 
 [macos.safari]
+# I can handle the full URL, thanks.
 show-full-url = true
+
+[macos.magic-mouse]
+# The options are "one-button", and "two-button".k
+mouse-button-mode = "two-button"
+
+[macos.finder]
+# Display directory breadcrumbs at the bottom of the finder window. This is
+# helpful for me to orient my location in the filesystem and allow me to easily
+# jump up a few directories.
+show-pathbar = true
+# Also helpful to figure out where you are in the filesystem.
+show-full-posix-path-in-title-bar = true
