@@ -1,4 +1,5 @@
-font-family = "FiraCode Nerd Font"
+# font-family = "FiraCode Nerd Font"
+font-family = "IosevkaTerm Nerd Font"
 font-size = 16
 theme = "Builtin Solarized Dark"
 
@@ -7,3 +8,5 @@ theme = "Builtin Solarized Dark"
 # quick-terminal-size = 38%
 quick-terminal-position = right
 keybind = global:cmd+escape=toggle_quick_terminal
+
+# custom-shader = ~/.config/ghostty/shaders/green-crt.glsl
