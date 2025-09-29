@@ -1,32 +1,46 @@
+[shell-installers]
+install = ["rustup"]
+
 [brew]
 formulae = [
     "bat",
+    "borgbackup",  # Use Borg for backups.
+    "borgmatic",   # Simplifies backup.
     "cmus",
-    "dust",       # Pretty `du`, written in Rust.
-    "eza",        # Pretty successor to `exa` and `ls`, written in Rust.
-    "fd",         # Successor to `find`, written in Rust.
+    "dust",        # Pretty `du`, written in Rust.
+    "duckdb",
+    "exiftool",
+    "eza",         # Pretty successor to `exa` and `ls`, written in Rust.
+    "fd",          # Successor to `find`, written in Rust.
     "fish",
     "gemini-cli",
     "git",
     "git-delta",
     "helix",
     "hexyl",
-    "just",       # Just the parts of `make` that I mostly use.
-    "mas",        # Necessary to be able to install App store Apps.
+    "imagemagick",
+    "just",        # Just the parts of `make` that I mostly use.
+    "jq",
+    "mas",         # Necessary to be able to install App store Apps.
     "mpd",
-    "neovim",     # nvim is an alias in brew for neovim.
+    "neovim",      # nvim is an alias in brew for neovim.
     "pass",
-    "ripgrep",    # Successor to `ag`, `grep`, written in Rust.
+    "ripgrep",     # Successor to `ag`, `grep`, written in Rust.
     "starship",
-    "uv",         # I have had it with these monkey-fighting snakes on this Monday-to-Friday plane!
+    "sqlite",
+    "uv",          # I have had it with these monkey-fighting snakes on this Monday-to-Friday plane!
+    "wget",
+    "zola",
 ]
 casks = [
     "alacritty",
     "anki",
     "balenaetcher",
     "font-fira-code-nerd-font",    # I'm happiest coding in Fira Code.
-    "font-iosevka-term-nerd-font", # A slimmer font, gives me more columns
+    "font-iosevka-term-nerd-font", # A slimmer font, gives me more columns.
     "ghostty",                     # The last terminal emulator that I ever install?
+    "google-chrome",
+    "handbrake",
     "keepassxc",
     "makemkv",
     "musicbrainz-picard",
@@ -38,9 +52,11 @@ casks = [
     "rectangle",
     "signal",
     "slack",
+    "utm",
     "visual-studio-code",
     "vlc",
     "xld",
+    "zoom",
 ]
 
 [mas]
@@ -87,6 +103,8 @@ extensions = [
     "google.gemini-cli-vscode-ide-companion",
     # Generic container tooling that also has Podman support.
     "ms-azuretools.vscode-containers",
+    # SSH into remote machines and edit code there.
+    "ms-vscode-remote.remote-ssh",
     # Rust Analyzer, because I deserve nice things.
     "rust-lang.rust-analyzer",
     # My go-to spell checker for VSCode.
@@ -108,7 +126,7 @@ weird-mac-scrolling = false
 # I've never used this feature, and it causes issues with vim navigation.
 key-press-and-hold = false
 # Waiting for key repeat to start? Ain't nobody got time for that.
-initial-key-repeat-wait = 10
+initial-key-repeat-wait = 14
 # Makes hold-down key repeats feel _FAST_!
 key-repeat-rate = 1
 # I can capitalize my own words, thank you very much.
