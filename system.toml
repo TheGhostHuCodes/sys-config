@@ -33,7 +33,6 @@ formulae = [
     "zola",
 ]
 casks = [
-    "alacritty",
     "anki",
     "balenaetcher",
     "font-fira-code-nerd-font",    # I'm happiest coding in Fira Code.
@@ -64,8 +63,6 @@ apps = [{ name = "Amphetamine", id = "937984704" }]
 
 [dotfiles]
 files = [
-    ".config/alacritty/alacritty.toml",
-
     # cmus themes.
     ".config/cmus/themes/green-mono-88.theme",
     ".config/cmus/themes/solarized-dark.theme",
