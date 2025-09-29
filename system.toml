@@ -63,6 +63,8 @@ apps = [{ name = "Amphetamine", id = "937984704" }]
 
 [dotfiles]
 files = [
+    ".config/bat/config",
+
     # cmus themes.
     ".config/cmus/themes/green-mono-88.theme",
     ".config/cmus/themes/solarized-dark.theme",
