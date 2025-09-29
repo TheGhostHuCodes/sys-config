@@ -74,6 +74,7 @@ files = [
     # fish shell files.
     ".config/fish/config.fish",
     ".config/fish/conf.d/abbreviations.fish",
+    ".config/fish/functions/eza.fish",
 
     ".config/ghostty/config",
     ".config/ghostty/shaders/amber-crt.glsl",
